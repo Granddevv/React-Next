@@ -1,10 +1,9 @@
 import Link from 'next/link';
+import Layout from '../comps/Layout';
+
 
 export default () => (
-    <div>
-        <p>About.js</p>
-        <Link href="/next" style={{fontSize: 20}}>
-            <button> Goto Next Page </button>
-        </Link>
-    </div>
+    <Layout>
+        <p> About Page </p>
+    </Layout>
 )
