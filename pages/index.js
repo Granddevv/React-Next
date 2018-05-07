@@ -4,7 +4,7 @@ import Layout from '../comps/Layout';
 
 const PostLink = (props) => (
     <li>
-        <Link href={`/post?title=${props.title}`}>
+        <Link as={`/p/${props.id}`} href={`/post?title=${props.title}`}>
             <a> {props.title} </a>
         </Link>
     </li>
@@ -15,10 +15,10 @@ const Index = () => (
     <Layout>
         <p> Hello My blog</p>
         <ul>
-            <PostLink title='Home Home.js' />
-            <PostLink title='About About.js' />
-            <PostLink title='Next Next.js' />
-            <PostLink title='The Next JS' />
+            <PostLink id="home" title='Home Home.js' />
+            <PostLink id="about" title='About About.js' />
+            <PostLink id="next" title='Next Next.js' />
+            <PostLink id="thenext" title='The Next JS' />
         </ul>
     </Layout>
 )
