@@ -19,6 +19,7 @@
   },
   "scripts": {
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "analyse": "cross-env ANALYZE=1 next build"
   }
 }
